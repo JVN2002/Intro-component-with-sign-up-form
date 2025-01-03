@@ -1,0 +1,76 @@
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('../images/bg-intro-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Poppins", serif;
+}
+
+.grid{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+section{
+    color: hsl(0, 0%, 100%);
+    width: 500px;
+    height: 100px;
+}
+
+section h1{
+    font-size: 46px;
+}
+
+aside{
+    color: hsl(0, 0%, 100%);
+
+}
+
+aside p{
+    background-color: hsl(248, 32%, 49%);
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 65px 15px 65px;
+}
+
+aside form{
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+aside form .textBox{
+    display: list-item;
+    border: 2px solid hsl(246, 25%, 77%);
+    text-align: left;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 400px;
+    height: 40px;
+}
+
+aside form .btn {
+	box-shadow: 0px 4px 0px 0px hsl(154, 57%, 36%);
+	background-color:hsl(154, 59%, 51%);
+	border-radius:11px;
+	border:none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:16px 180px;
+	text-decoration:none;
+}
+aside form .btn:hover {
+	background-color:hsl(154, 79%, 63%);
+}
+aside form .btn:active {
+	position:relative;
+	top:1px;
+}
