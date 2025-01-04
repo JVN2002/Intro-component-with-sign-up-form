@@ -30,7 +30,7 @@ aside{
 
 }
 
-aside p{
+aside p.Freedays{
     background-color: hsl(248, 32%, 49%);
     box-shadow: 0px 8px 0px 0px hsla(0, 35%, 47%, 0.505);
     font-size: 16px;
@@ -49,7 +49,7 @@ aside form{
     padding: 50px 50px 5px;
 }
 
-aside form .textBox{
+input{
     display: list-item;
     border: 1px solid hsl(246, 25%, 77%);
     border-radius: 5px;
@@ -61,6 +61,14 @@ aside form .textBox{
     font-family: "Poppins", serif;
     font-weight: 600;
     padding-left: 50px;
+}
+
+input.BordaDeAviso{
+    border: 3px solid hsl(0, 100%, 74%);
+}
+
+input.BordaDeAviso::placeholder{
+    color: #ffffff00;
 }
 
 aside form .textBox:focus{
@@ -78,9 +86,12 @@ aside form .btn {
 	font-family: "Poppins", serif;
 	font-size:17px;
 	font-weight: 600;
-	padding:20px 180px;
+    width: 555px;
+    height: 50px;
 	text-decoration:none;
+    text-align: center;
 }
+
 aside form .btn:hover {
 	background-color:hsl(154, 79%, 63%);
 }
@@ -89,14 +100,46 @@ aside form .btn:active {
 	top:1px;
 }
 
-aside form p{
+aside form p.Termos{
+    text-align: center;
     font-size: 12px;
-    color: hsl(246, 25%, 77%);;
-    background-color: rgba(245, 222, 179, 0);
-    box-shadow: 0px 8px 0px 0px hsla(0, 35%, 47%, 0);
+    color: hsl(246, 25%, 77%);
+    margin-top: 15px;
+    position: relative;
+    font-size: 12px;
+    width: 100%;
 }
 
-aside form a{
+aside form p.Termos a{
     text-decoration: none;
     color: hsl(0, 100%, 74%);
+}
+
+aside form p{
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    margin-top: -20px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    font-size: 1px;
+    width: 0%;
+}
+
+aside form p.AvisoDePreenchimento{
+    width: 100%;
+    font-size: 13px;
+}
+
+aside form img{
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 500px;
+    width: 0%;
+    overflow: hidden;
+}
+
+aside form img.IMGAvisoDePreenchimento{
+    width: 1.5%;
+    overflow: visible;
 }

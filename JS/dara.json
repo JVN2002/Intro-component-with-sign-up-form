@@ -1,0 +1,22 @@
+[
+    {
+        "PlaceHolder": "First Name",
+        "Aviso": "First name cannot be empyt",
+        "Type": "text"
+    },
+    {
+        "PlaceHolder": "Last Name",
+        "Aviso": "Last name cannot be empyt",
+        "Type": "text"
+    },
+    {
+        "PlaceHolder": "Email Address",
+        "Aviso": "Looks like this is not an e-mail",
+        "Type": "email"
+    },
+    {
+        "PlaceHolder": "Password",
+        "Aviso": "Password cannot be empyt",
+        "Type": "password"
+    }
+]
