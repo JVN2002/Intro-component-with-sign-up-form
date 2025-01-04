@@ -16,12 +16,13 @@ body{
 
 section{
     color: hsl(0, 0%, 100%);
-    width: 500px;
-    height: 100px;
+    width: 530px;
+    height: auto;
+    padding: 80px;
 }
 
 section h1{
-    font-size: 46px;
+    font-size: 60px;
 }
 
 aside{
@@ -31,40 +32,53 @@ aside{
 
 aside p{
     background-color: hsl(248, 32%, 49%);
+    box-shadow: 0px 8px 0px 0px hsla(0, 35%, 47%, 0.505);
     font-size: 16px;
     text-align: center;
     border-radius: 10px;
-    padding: 15px 65px 15px 65px;
+    padding: 20px 65px;
+    margin-bottom: 35px;
 }
 
 aside form{
     background-color: white;
+    box-shadow: 0px 8px 0px 0px hsla(0, 35%, 47%, 0.505);
     border-radius: 10px;
-    padding: 30px;
+    width: 550px;
+    height: auto;
+    padding: 50px 50px 5px;
 }
 
 aside form .textBox{
     display: list-item;
-    border: 2px solid hsl(246, 25%, 77%);
-    text-align: left;
+    border: 1px solid hsl(246, 25%, 77%);
     border-radius: 5px;
-    margin-bottom: 15px;
-    width: 400px;
-    height: 40px;
+    margin-bottom: 25px;
+    width: 500px;
+    height: 55px;
+    outline: none;
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    padding-left: 50px;
+}
+
+aside form .textBox:focus{
+    border-color: hsl(248, 32%, 49%);
 }
 
 aside form .btn {
 	box-shadow: 0px 4px 0px 0px hsl(154, 57%, 36%);
 	background-color:hsl(154, 59%, 51%);
-	border-radius:11px;
+	border-radius:7px;
 	border:none;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-family: "Poppins", serif;
 	font-size:17px;
-	font-weight:bold;
-	padding:16px 180px;
+	font-weight: 600;
+	padding:20px 180px;
 	text-decoration:none;
 }
 aside form .btn:hover {
@@ -73,4 +87,16 @@ aside form .btn:hover {
 aside form .btn:active {
 	position:relative;
 	top:1px;
+}
+
+aside form p{
+    font-size: 12px;
+    color: hsl(246, 25%, 77%);;
+    background-color: rgba(245, 222, 179, 0);
+    box-shadow: 0px 8px 0px 0px hsla(0, 35%, 47%, 0);
+}
+
+aside form a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
 }
