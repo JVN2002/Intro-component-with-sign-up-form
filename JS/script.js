@@ -21,6 +21,22 @@ function verificaCampo(Campo,Aviso,img,tipo){
         img.classList.remove('IMGAvisoDePreenchimento');
         Campo.classList.remove('BordaDeAviso');
     }
+
+    if(tipo === 'email')
+    {
+        if(!Text1.includes('@') || !Text1.includes('.'))
+        {
+            Aviso.classList.add('AvisoDePreenchimento');
+            img.classList.add('IMGAvisoDePreenchimento');
+            Campo.classList.add('BordaDeAviso');
+        }
+        else if(Text1.includes('@') && Text1.includes('.'))
+        {
+            Aviso.classList.remove('AvisoDePreenchimento');
+            img.classList.remove('IMGAvisoDePreenchimento');
+            Campo.classList.remove('IMGAvisoDePreenchimento');
+        }
+    }
 }
 
 const BOX = document.getElementById('Formulario')
@@ -48,7 +64,7 @@ function Form(){
 
   
         button.addEventListener('click', () => {
-            verificaCampo(input,p,image);
+            verificaCampo(input,p,image,input.type);
         });
     }
     

@@ -2,7 +2,7 @@ body{
     background-color: hsl(0, 100%, 74%);
     background-image: url('../images/bg-intro-desktop.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
     font-family: "Poppins", serif;
 }
@@ -142,4 +142,65 @@ aside form img{
 aside form img.IMGAvisoDePreenchimento{
     width: 1.5%;
     overflow: visible;
+}
+
+@media screen and (max-width: 1150px){
+    .grid{
+        display: inline;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    section h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    section p{
+        text-align: center;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    aside p.Freedays{
+        box-shadow: 0px 16px 0px 0px hsla(0, 35%, 47%, 0.505);
+        font-size: 16px;
+        text-align: center;
+        border-radius: 10px;
+        width: auto;
+        height: 65px;
+        margin-left: 160px;
+        margin-right: 160px;
+        margin-bottom: 35px;
+    }
+
+    aside form{
+        margin-left: 160px;
+        margin-right: 160px;
+        width: 300px;
+        height: auto;
+    }
+
+    input{
+        width: 250px;
+    }
+
+    aside form .btn{
+        width: 310px;
+        text-align: center;
+    }
+
+    aside form img{
+        margin-left: 275px;
+        margin-top: -90px;
+        width: 0%;
+        overflow: hidden;
+    }
+
+    aside form img.IMGAvisoDePreenchimento{
+        width: 3%;
+        overflow: visible;
+    }
 }
